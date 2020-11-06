@@ -1,11 +1,12 @@
 #!/usr/bin/python3
 
-# A simple discord bot to connect a single (tested on vanilla) minecraft server instance to a single discord server
+# A simple discord bot by Jon Newton to connect a single (tested on vanilla) minecraft server instance to a single discord server
+# written because I was challenged to do so by a family member :)
 # developed for linux (tested on ubuntu).
 #
 # current capabilities:  
 #   1: All minecraft chat is mirrored to a discord channel ('mcchat' by default)
-#   2: All messages in the discord channel are mirrored to the minecraft chat
+#   2: All messages in the specified discord channel are mirrored to the minecraft chat by default
 #   3: Minecraft commands can be run from discord by sending a message "<cmd> minecraft command"
 #   4: Authentication such that minecraft commands can only be run by a user in a sepcified discord server role ('mc cmds' by default)
 #   5: you can get the current public ip of the minecraft server from within discord by typing <ip>
@@ -27,6 +28,7 @@
 #   place this python file in the same directory as your minecraft server
 #   ensure your minecraft server is runnin (currently this does not work if you start the server afterwards)
 #   run as follows:  DISCORD_BOT_TOKEN='mytoken' python3 mc_discord_bot.py
+#   type <help> in discord and the bot should respond.
 #
 # (The other important settings can be changed using env vars  - see below.  )
 #
