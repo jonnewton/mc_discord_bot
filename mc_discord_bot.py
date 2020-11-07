@@ -66,7 +66,7 @@ async def count_mobs(m,t): #count the number of mobs (todo)
     await m.channel.send("1, 2, 3, 4, ..   yes there are lots.")
 
 async def say(m,t): #say something in chat
-    name=m.author.nick
+    name=m.author.display_name
     id=str(m.author.id)
     #create the armor stand summoning string
     stand="summon armor_stand ~ ~ ~ {CustomNameVisible:0b,NoGravity:1b,Marker:1b,Invisible:1b,Tags:['"+id+"','discord'],CustomName:'{\"text\":\"@"+name+"\",\"bold\":true}'}"
